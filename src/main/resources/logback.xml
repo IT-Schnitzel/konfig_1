@@ -1,0 +1,11 @@
+<configuration>
+    <appender name="file" class="ch.qos.logback.core.FileAppender">
+        <file>/path/to/logfile.xml</file>
+        <encoder>
+            <pattern>%date{ISO8601} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <root level="debug">
+        <appender-ref ref="file" />
+    </root>
+</configuration>
