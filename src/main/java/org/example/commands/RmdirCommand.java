@@ -1,10 +1,6 @@
 package org.example.commands;
 
-
 import org.example.VirtualFileSystem;
-
-import java.nio.file.Files;
-import java.nio.file.Path;
 
 public class RmdirCommand implements Command {
     private final VirtualFileSystem vfs;
@@ -15,17 +11,20 @@ public class RmdirCommand implements Command {
 
     @Override
     public boolean execute(String args) {
-        try {
-            Path dir = vfs.getCurrentDirectory().resolve(args);
-            if (Files.isDirectory(dir)) {
-                Files.delete(dir);
-                System.out.println("Directory removed: " + args);
-            } else {
-                System.out.println("Directory not found: " + args);
-            }
-        } catch (Exception e) {
-            System.out.println("Error removing directory: " + e.getMessage());
+        if (args == null || args.trim().isEmpty()) {
+            System.out.println("Usage: rmdir <directory_name>");
+            return false;
         }
-        return true;
+
+        String dirName = args.trim();
+        boolean success = vfs.removeDirectory(dirName);
+
+        if (success) {
+            System.out.println("Directory " + dirName + " removed.");
+            return true;
+        } else {
+            System.out.println("Failed to remove directory: " + dirName);
+            return false;
+        }
     }
 }
