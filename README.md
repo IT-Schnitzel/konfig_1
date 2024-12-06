@@ -21,3 +21,7 @@ exit - Завершает работу эмулятора.
 
 ![Uploading image.png…]()
 
+![Uploading image.png…]()
+
+![Uploading image.png…]()
+
