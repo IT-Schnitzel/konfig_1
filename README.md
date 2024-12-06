@@ -14,3 +14,8 @@ rmdir [directory] - удаляет пестую директорию
 echo "message" - выводит в консоль определенное сообщение
 
 exit - Завершает работу эмулятора.
+
+![image](https://github.com/user-attachments/assets/f4d06fc9-22b4-4453-aa52-15476dc3ec69)
+
+
+
