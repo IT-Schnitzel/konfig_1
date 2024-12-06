@@ -21,4 +21,9 @@ exit - Завершает работу эмулятора.
 
 ![image](https://github.com/user-attachments/assets/5a99ac31-34bd-4d7d-b415-53d948ff7696)
 
+![image](https://github.com/user-attachments/assets/a830e097-3c9a-470b-b842-7c4ced410470)
+
+![image](https://github.com/user-attachments/assets/cfa091a3-a2c5-46c1-92b2-1e1ced24875f)
+
+![image](https://github.com/user-attachments/assets/65371374-e1ff-43d7-b69d-facdb3e02694)
 
